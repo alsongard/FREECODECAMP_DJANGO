@@ -1,2 +1,16 @@
-bin/ 
+# Django #
+*.log
+*.pot
+*.pyc
+
+media
+src/mysite/__pycache__
+src/mysite/settings.py
+src/db.sqlite3
+
+# virtualenv
+pyvenv.cfg
+bin/
 lib/
+
+django_freecodecamp_notes.md
