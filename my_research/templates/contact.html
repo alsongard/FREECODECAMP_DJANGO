@@ -1,5 +1,23 @@
 {%extends 'base.html'%}
 {%block content%}
 <p>Welcome to Zetech Contact Page</p>
+<!-- contact dict -->
+
+<h1 style="text-align: center; font-weight: bold;">Contact</h1>
+<div style="background-color: rgba(180, 81, 81, 0.342);">
+    <p>University Name: {{univesity_name}}</p>
+    <p>Phone Number: {{phone_number}}</p>
+    <ul>
+        {%for item in campus_names%}
+            <li>Campus Name : {{item}}</li>
+        {%endfor%}
+    </ul>
+    <ul>
+        {%for item in location%}
+            <li>Campus Name : {{item}}</li>
+        {%endfor%}
+    </ul>
+</div>
 {%endblock%}
+
 
