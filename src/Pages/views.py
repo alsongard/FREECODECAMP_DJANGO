@@ -13,3 +13,11 @@ def contact_view(request, *args, **kwargs):
 def about_view(request, *args, **kwargs):
     # return HttpResponse("<h1>This is my about view</h1>")
     return render(request, "about.html", {})
+
+def service_view(request, *args, **kwargs):
+    contact_dict = {
+        "company name": "Alson Software & CyberSec Institution",
+        "location": "Mars City",
+        "services" : ["Software Development", "Penetration Testing", "IoT", "Robotics"]
+    }
+    return render(request, "services.html", contact_dict)
