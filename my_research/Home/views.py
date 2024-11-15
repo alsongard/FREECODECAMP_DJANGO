@@ -11,5 +11,17 @@ def about_view(request, *args, **kwargs):
     return render(request, "about.html", {})
 
 def contact_view(request, *args, **kwargs):
-    return render(request, "contact.html", {})
+    contactdict = {
+        "univesity_name": "Zetech University",
+        "phone_number": "254714588863",
+        'campus_names': ["Zetech Mangu Campus", "Zetech Ruiru Campus", "Zetech Nairobi Campus"],
+        'location': ["Mangu", "Ruiru", "CBD"]
+    }
+    return render(request, "contact.html", contactdict)
 
+
+"""
+
+
+
+"""
