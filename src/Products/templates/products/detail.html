@@ -1,0 +1,10 @@
+{%extends  'base.html'%}
+
+{%  block content %}
+    <h2>Product Details</h2>
+
+    <p>Category : {{object.category}}</p>
+    <p>Tile : {{object.title}}</p>
+    <p>Description : {% if object.description != '' %} Cool {{object.description}} {% else %} Coming Soon {%endif%}</p>
+    <p>Price : {{object.price}}</p>
+{% endblock %}
