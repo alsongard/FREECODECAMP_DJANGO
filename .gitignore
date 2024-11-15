@@ -14,3 +14,9 @@ bin/
 lib/
 
 django_freecodecamp_notes.md
+
+
+# my_research project
+my_research/db.sqlite3
+my_research/Research/settings.py
+my_research/Research/__pycache__
