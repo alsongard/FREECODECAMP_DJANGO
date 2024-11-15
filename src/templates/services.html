@@ -3,3 +3,10 @@
 <h1>{{company_name}}</h1>
 <p>{{location}}</p>
 <p>{{services}}</p>
+
+<p>Get each service in a list use:</p>
+<ul>
+    {%for sub_service in services%}
+    <li>{{sub_service}}</li>
+    {%endfor%}
+</ul>
