@@ -16,7 +16,7 @@ def about_view(request, *args, **kwargs):
 
 def service_view(request, *args, **kwargs):
     contact_dict = {
-        "company name": "Alson Software & CyberSec Institution",
+        "company_name": "Alson Software & CyberSec Institution",
         "location": "Mars City",
         "services" : ["Software Development", "Penetration Testing", "IoT", "Robotics"]
     }
