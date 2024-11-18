@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<h1> Using GET</h1>
+
+<form action="https://google.com/search" method="GET">
+    <input type="text" placeholder="Enter query" name="q"/>
+    <input type="submit" value="submit"/>
+</form>
+
+<h1> Using POST</h1>
+<form action="https://google.com/search" method="POST"> {% csrf_token %}
+    <input type="text" placeholder="Enter query" name="q"/>
+    <input type="submit" value="submit"/>
+</form>
+{% endblock %}
+
+
+
+
